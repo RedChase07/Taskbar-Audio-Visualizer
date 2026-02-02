@@ -5,7 +5,7 @@ A Windows taskbar audio visualizer overlay similar to TranslucentTB with real-ti
 ## Features
 - Real-time audio spectrum visualization
 - Transparent overlay on the Windows taskbar
-- Click-through design (taskbar remains fully interactive)
+- Click-through design (taskbar remains fully interactive - disabled by default)
 - Gradient color effects
 - System audio capture via WASAPI
 
@@ -37,7 +37,6 @@ Or run the compiled executable directly:
 1. **Audio Capture**: Uses WASAPI loopback capture to capture system audio output
 2. **Frequency Analysis**: Analyzes the audio frequency spectrum
 3. **Visualization**: Displays frequency bars that react to audio in real-time
-4. **Window Integration**: Creates a transparent, click-through overlay on the taskbar
 
 ## Dependencies
 
@@ -48,3 +47,4 @@ Or run the compiled executable directly:
 ## License
 
 MIT License
+
