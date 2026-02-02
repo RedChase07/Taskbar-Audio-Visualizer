@@ -2,6 +2,8 @@
 
 A Windows taskbar audio visualizer overlay similar to TranslucentTB with real-time frequency visualization.
 
+RedChase07: "github seems to have auto filled in the README.md so i edited some things"
+
 ## Features
 - Real-time audio spectrum visualization
 - Transparent overlay on the Windows taskbar
@@ -47,4 +49,5 @@ Or run the compiled executable directly:
 ## License
 
 MIT License
+
 
