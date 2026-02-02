@@ -1,15 +1,50 @@
-# Taskbar-Audio-Visualizer
-This project is inspired from TranslucentTB and how it effects the windows taskbar.
-I've always loved the idea of having a audio visualizer where my taskbar is so thats what this project aims to be!
-so far you can choose bar color options, amount of bars, how big or small it is, and etc.
+# TaskbarVisualizer - C# Audio Visualizer
 
-this project is vibe-coded meaning that i had AI do all the hard codeing tasks (VS-code github copilot) and i tried my best to guide it.
-this also means that code probably wont be well optimized and may have bugs, so I'm sorry about that.
+A Windows taskbar audio visualizer overlay similar to TranslucentTB with real-time frequency visualization.
 
-some fetures that i plan to add are program specific audio sources (kinda like windows audio mixer), more color custimizations and get Transparency to work (lol)
+## Features
+- Real-time audio spectrum visualization
+- Transparent overlay on the Windows taskbar
+- Click-through design (taskbar remains fully interactive)
+- Gradient color effects
+- System audio capture via WASAPI
 
-you can duble click the windows icon to open the settings quicker and theres a feture to help bring it to the frount 
-(was going to have it say where the windows taskbar is but i ran into issues about how the windows taskbar REALLY seems to want to always be in frount :/ so yeah...)
+## Requirements
+- .NET 6.0 or later
+- Windows 10/11
+- Visual Studio 2022 (recommended) or VS Code with C# extension
 
-there is a setting option to allow click-through abblity but that stops you from being able to click and drag it.
-also settings seem to be "hard-coded" so you will have to manully set some things each time... still working on getting settings to save right :/
+## Building
+
+```bash
+dotnet build
+```
+
+## Running
+
+```bash
+dotnet run
+```
+
+Or run the compiled executable directly:
+
+```bash
+.\bin\Release\net6.0-windows\TaskbarVisualizer.exe
+```
+
+## How It Works
+
+1. **Audio Capture**: Uses WASAPI loopback capture to capture system audio output
+2. **Frequency Analysis**: Analyzes the audio frequency spectrum
+3. **Visualization**: Displays frequency bars that react to audio in real-time
+4. **Window Integration**: Creates a transparent, click-through overlay on the taskbar
+
+## Dependencies
+
+- NAudio 2.2.1 - For audio capture and processing
+- Windows Forms - For UI rendering
+- Windows API - For taskbar integration and window manipulation
+
+## License
+
+MIT License
